@@ -1,0 +1,56 @@
+############################
+# OS
+############################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+
+############################
+# Logs and databases
+############################
+.tmp
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+############################
+# Misc
+############################
+*.swp
+*.swo
+.idea
+.vscode
+*.iml
+*.pid
+*.seed
+coverage
+.nyc_output
+
+############################
+# Strapi
+############################
+.env
+license.txt
+exports
+.strapi
+dist
+build
+.strapi-updater.json
+.strapi-cloud.json
+public/uploads/*
+!public/uploads/.gitkeep
+
+############################
+# Node
+############################
+node_modules
+.node_history

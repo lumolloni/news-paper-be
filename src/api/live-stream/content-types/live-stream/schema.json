@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "live_streams",
+  "info": {
+    "singularName": "live-stream",
+    "pluralName": "live-streams",
+    "displayName": "Live Stream",
+    "description": "Authenticated live video streams"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "streamUrl": {
+      "type": "string",
+      "required": true
+    },
+    "provider": {
+      "type": "enumeration",
+      "enum": ["hls", "dash", "youtube", "vimeo", "file"],
+      "default": "hls"
+    },
+    "poster": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "posterUrl": {
+      "type": "string"
+    },
+    "isLive": {
+      "type": "boolean",
+      "default": false
+    },
+    "startsAt": {
+      "type": "datetime"
+    }
+  }
+}

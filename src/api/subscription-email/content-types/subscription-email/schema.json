@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscription_emails",
+  "info": {
+    "singularName": "subscription-email",
+    "pluralName": "subscription-emails",
+    "displayName": "SubscriptionEmail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": false,
+      "unique": true,
+      "regex": "^[^@]+@[^@]+\\.[^@]+$"
+    }
+  }
+}

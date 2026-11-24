@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "polls",
+  "info": {
+    "singularName": "poll",
+    "pluralName": "polls",
+    "displayName": "Poll",
+    "description": "Reader polls, optionally attached to an article"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "options": {
+      "type": "component",
+      "component": "poll.option",
+      "repeatable": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "article": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::article.article"
+    }
+  }
+}

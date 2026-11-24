@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "poll_votes",
+  "info": {
+    "singularName": "poll-vote",
+    "pluralName": "poll-votes",
+    "displayName": "Poll Vote",
+    "description": "Records one vote per user per poll"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "poll": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::poll.poll"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "optionIndex": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    }
+  }
+}

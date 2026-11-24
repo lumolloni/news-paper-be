@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_messages",
+  "info": {
+    "singularName": "contact-message",
+    "pluralName": "contact-messages",
+    "displayName": "ContactMessage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "email": {
+      "type": "string",
+      "required": true,
+      "regex": "^[^@]+@[^@]+\\.[^@]+$"
+    },
+    "subject": { "type": "string" },
+    "message": { "type": "text", "required": true }
+  }
+}

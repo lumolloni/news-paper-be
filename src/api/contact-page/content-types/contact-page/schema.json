@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "Contact Page",
+    "description": "Editable Contact page intro and details"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Contact",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "intro": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "email": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "phone": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "address": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    }
+  }
+}
